@@ -20,3 +20,7 @@ Tuve una complicación a la hora de agregar la funcionalidad al evento del input
   
 ## Instalación
 "Para ejecutar este proyecto, crea un archivo `config.js` y añade tu API Token de TMDB de la siguiente manera: `const TOKEN = 'tu_token';`"
+
+## Mejoras futuras
+  - Añadir una sección para buscar actrices y actores.
+
