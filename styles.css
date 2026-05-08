@@ -1,0 +1,153 @@
+:root {
+  --primary-color: #0d253f;
+  --primary-color-soft: rgb(13, 37, 63, 0.8);
+  --secondary-color: #01b4e4;
+  --tertiary-color: #90cea1;
+  --white: #fff;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Utilities */
+.container {
+  width: 120rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.no-movies {
+  background: var(--primary-color);
+  color: var(--white);
+  font-weight: bold;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: fit-content;
+}
+
+/* Header */
+.header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.header__info {
+  margin: 2rem 0;
+}
+
+.header__search {
+  width: 50%;
+  padding: 1rem;
+  letter-spacing: 0.1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--secondary-color);
+  color: inherit;
+  font-size: inherit;
+}
+
+.header__search:focus {
+  outline: none;
+}
+
+.header__search::placeholder {
+  color: #01b4e4;
+}
+
+/* Movies */
+.movies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+  margin-top: 8rem;
+}
+
+.movie {
+  border-bottom: 1px solid var(--primary-color-soft);
+  padding-bottom: 4rem;
+  transition: 0.3s ease;
+}
+
+.movie__title {
+  color: var(--primary-color);
+  margin: 2rem 0;
+}
+
+.movie__overview {
+  color: var(--primary-color-soft);
+}
+
+.movie__img {
+  border-radius: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color);
+  padding: 4rem 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer__text {
+  color: var(--white);
+}
+
+.footer__link {
+  color: var(--secondary-color);
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__logo {
+  max-width: 5rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .movies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .movies {
+    grid-template-columns: 1fr;
+  }
+}

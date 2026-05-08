@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMBD</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">Buscador de películas</h1>
+        <p class="header__info">Busca tu película favorita!</p>
+
+        <input
+          class="header__search"
+          id="search"
+          type="search"
+          placeholder="Busca aquí por tu película"
+        />
+      </div>
+    </header>
+
+    <main class="container">
+      <ul class="movies" id="movies"></ul>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <img
+          class="footer__logo"
+          src="imgs/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
+          alt="Logo oficial de tmdb"
+        />
+        <p class="footer__text">
+          Los derechos de la API corresponden a
+          <a
+            class="footer__link"
+            href="https://developer.themoviedb.org/docs/getting-started"
+            >TMDB</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
